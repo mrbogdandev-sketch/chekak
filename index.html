@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Новая, простая соцсеть от независимого разработчика из Беларуси.">
+  <title>Новая, простая соцсеть</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#intro" aria-label="На главную">
+      <img src="assets/logo.svg" alt="" class="header-logo">
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#why">Почему мы</a>
+      <a href="#contact">Связь</a>
+    </nav>
+    <a class="header-action" href="#contact"><span>Связаться</span><span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="intro" id="intro" data-intro>
+      <div class="intro-grid" aria-hidden="true"></div>
+      <div class="floating-elements">
+        <div class="float-item float-one"><img src="assets/element1.png" alt=""></div>
+        <div class="float-item float-two"><img src="assets/element2.png" alt=""></div>
+        <div class="float-item float-three"><img src="assets/element3.png" alt=""></div>
+        <div class="float-item float-four"><img src="assets/element4.png" alt=""></div>
+      </div>
+      <div class="intro-content">
+        <div class="logo-stage">
+          <div class="logo-placeholder"><img src="assets/logo.svg" alt=""></div>
+        </div>
+        <p class="typing-line" data-typing="Новая, простая соцсеть"><span></span><i aria-hidden="true"></i></p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-topline"><span>02 / 04</span><span>О нас</span></div>
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p class="eyebrow">Небольшая команда, большие планы</p>
+          <h1>Своя сеть.<br><em>Свои правила.</em></h1>
+          <div class="about-text">
+            <p>Проект создан тринадцатилетним независимым разработчиком из Беларуси. Это мой пэт-проект, который сейчас находится на стадии разработки.</p>
+            <p>Я хочу построить огромное и дружелюбное сообщество, где людям будет интересно оставаться собой, делиться идеями и находить своих.</p>
+          </div>
+          <div class="signature"><span class="signature-dot"></span><span>Богдан, основатель</span></div>
+        </div>
+        <div class="portrait-wrap reveal" data-asset="bogdan.png">
+          <img src="assets/bogdan.png" alt="Портрет создателя проекта">
+          <div class="portrait-fade"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="section-topline"><span>03 / 04</span><span>Почему мы</span></div>
+      <div class="why-heading reveal">
+        <p class="eyebrow">Без громких обещаний</p>
+        <h2>Пока не идеально.<br><em>Зато по-настоящему.</em></h2>
+        <p class="why-lead">Мы честно скажем: здесь пока нет суперфункций. Есть три вещи, которые для нас важнее всего.</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature reveal">
+          <div class="feature-index">01</div>
+          <div class="feature-media" data-asset="m1.png"><img src="assets/m1.png" alt="Иллюстрация кастомизации"></div>
+          <div class="feature-copy"><h3>Кастомизация</h3><p>Настраивайте пространство под себя. Ваша страница — ваш характер.</p><span class="feature-arrow">↗</span></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-index">02</div>
+          <div class="feature-media" data-asset="m2.png"><img src="assets/m2.png" alt="Иллюстрация скорости"></div>
+          <div class="feature-copy"><h3>Скорость</h3><p>Ничего лишнего. Открывайте, листайте, общайтесь — быстро и легко.</p><span class="feature-arrow">↗</span></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-index">03</div>
+          <div class="feature-media" data-asset="m3.png"><img src="assets/m3.png" alt="Иллюстрация плэйхаба"></div>
+          <div class="feature-copy"><h3>Плэйхаб</h3><p>Игры и совместные впечатления уже внутри. Больше поводов быть вместе.</p><span class="feature-arrow">↗</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-topline"><span>04 / 04</span><span>Связь</span></div>
+      <div class="contact-layout">
+        <div class="contact-heading reveal"><p class="eyebrow">Будем на связи</p><h2>Есть вопрос?<br><em>Давайте поговорим.</em></h2></div>
+        <div class="contact-details reveal">
+          <a href="mailto:mrbogdandev@gmail.com" class="contact-row"><span class="contact-label">Почта</span><span>mrbogdandev@gmail.com</span><b>↗</b></a>
+          <a href="tel:+375296614979" class="contact-row"><span class="contact-label">Телефон</span><span>+375 29 661 49 79</span><b>↗</b></a>
+          <a href="https://t.me/bgd_user" class="contact-row" target="_blank" rel="noreferrer"><span class="contact-label">Telegram</span><span>@bgd_user</span><b>↗</b></a>
+          <a href="https://wa.me/375296614979" class="contact-row" target="_blank" rel="noreferrer"><span class="contact-label">WhatsApp</span><span>@bgdsssss</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
