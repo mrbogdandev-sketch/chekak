@@ -3,6 +3,7 @@ const header = document.querySelector('[data-header]');
 const typingLine = document.querySelector('[data-typing]');
 const typingTarget = typingLine?.querySelector('span');
 const revealItems = document.querySelectorAll('.reveal');
+const launchButton = document.querySelector('[data-launch]');
 
 function typeText() {
   if (!typingTarget || !typingLine) return;
@@ -37,6 +38,15 @@ function updateScrollState() {
 
 window.addEventListener('scroll', updateScrollState, { passive: true });
 updateScrollState();
+
+launchButton?.addEventListener('click', (event) => {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+  event.preventDefault();
+  document.body.classList.add('is-launching');
+  window.setTimeout(() => {
+    window.location.href = launchButton.href;
+  }, 820);
+});
 
 // Keep missing user assets readable until the real files are added.
 document.querySelectorAll('.logo-placeholder img, [data-asset] img').forEach((image) => {
